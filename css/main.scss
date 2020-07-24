@@ -160,6 +160,8 @@ header {
 .about {
     .container {
         @include container;
+        border-top:1px solid #888888;
+        margin-top: 60px;
     }
 
     h2 {
@@ -168,6 +170,7 @@ header {
 
     img {
         margin: auto;
+        border-radius:50%;
     }
 
     .name_title {

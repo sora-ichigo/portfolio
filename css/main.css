@@ -99,14 +99,17 @@ header {
 /*===========================================================*/
 .about .container {
   padding: 30px 0;
-  border-bottom: 1px solid #888888; }
+  border-bottom: 1px solid #888888;
+  border-top: 1px solid #888888;
+  margin-top: 60px; }
 .about h2 {
   text-align: center;
   margin-bottom: 60px;
   font-size: 40px;
   font-family: "PT Serif", serif; }
 .about img {
-  margin: auto; }
+  margin: auto;
+  border-radius: 50%; }
 .about .name_title {
   margin-top: 20px;
   font-family: "Noto Sans JP", sans-serif;
