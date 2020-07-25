@@ -365,7 +365,7 @@ header {
   opacity: 0.3; }
 
 form {
-  width: 50%;
+  width: 60%;
   margin: 0 auto; }
   form p {
     text-align: center;
@@ -400,8 +400,9 @@ footer {
     .skill .skill_item div {
       height: 120px; }
 
-  .contact div p {
-    font-size: 12px; }
+  .contact .container div p {
+    width: 80%;
+    margin: 0 auto 10px; }
 
   form {
     width: 80%; }
@@ -414,5 +415,24 @@ footer {
 /*===============================================================================*/
 /*= width<576px以下の設定　　                                                   =*/
 /*===============================================================================*/
+@media (max-width: 576px) {
+  .about img {
+    width: 60%; }
+  .about .about_status {
+    width: 80%;
+    margin: 0 auto; }
+
+  .service_top {
+    width: 80%;
+    margin: 0 auto; }
+    .service_top div {
+      width: 100%; }
+    .service_top p {
+      width: 100%;
+      margin-bottom: 20px; }
+
+  .service_about {
+    width: 80%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */

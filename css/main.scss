@@ -540,7 +540,7 @@ header {
 }
 
 form {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     p {
         text-align: center;
@@ -581,7 +581,7 @@ footer {
 /*===============================================================================*/
 
 @include tb {
-    
+
     .skill .skill_item {
         img {
             width: 60%;
@@ -592,8 +592,9 @@ footer {
         margin-bottom: 20px;
     }
 
-    .contact div p {
-        font-size: 12px;
+    .contact .container div p {
+        width: 80%;
+        margin: 0 auto 10px;
     }
 
 
@@ -618,3 +619,32 @@ footer {
 /*= width<576px以下の設定　　                                                   =*/
 
 /*===============================================================================*/
+
+@include sp {
+    .about {
+        img {
+            width: 60%;
+        }
+
+        .about_status {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .service_top {
+        width: 80%;
+        margin: 0 auto;
+        div {
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .service_about {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
