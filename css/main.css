@@ -4,6 +4,9 @@ html {
   height: 100%;
   margin: 0; }
 
+.row {
+  margin: 0; }
+
 body {
   position: relative;
   right: 0;
