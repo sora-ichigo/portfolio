@@ -15,200 +15,214 @@
     <!--main.css-->
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <!--Vue.js-->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
 
     <title>Ichigo's portfolio</title>
 </head>
 
 <body>
-    <div id="app">
 
-        <!--ヘッダー-->
-        <header>
-            <div class="container">
-                <div class="row d-none d-md-flex">
-                    <h2 class="col-md-3">portfolio</h2>
-                    <ul class="col-md-7 offset-md-2 d-flex justify-content-md-between">
-                        <li>top</li>
-                        <li>about</li>
-                        <li>skill</li>
-                        <li>works</li>
-                        <li>contact</li>
-                    </ul>
-                </div>
-
-                <div class="navi_menu d-block d-md-none">
-                    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-                    <label for="openSidebarMenu" class="sidebarIconToggle">
-                        <div class="spinner diagonal part-1"></div>
-                        <div class="spinner horizontal"></div>
-                        <div class="spinner diagonal part-2"></div>
-                    </label>
-                </div>
-            </div>
-        </header>
-        <!--ヒーローイメージ-->
-        <div class="hero">
-            <div>
-                <img src="img/logo/hero_logo_font.png" alt="hero_logo">
-                <a href="#" class="btn-box">WHO'S ME?</a>
+    <!--ヘッダー-->
+    <header class="d-none d-md-block">
+        <div class="container">
+            <div class="row d-none d-md-flex">
+                <h2 class="col-md-3">portfolio</h2>
+                <ul class="col-md-7 offset-md-2 d-flex justify-content-md-between">
+                    <li>top</li>
+                    <li>about</li>
+                    <li>skill</li>
+                    <li>works</li>
+                    <li>contact</li>
+                </ul>
             </div>
         </div>
-
-
-        <!--自己紹介-->
-        <div class="about">
-            <div class="container">
-                <i class="fas fa-user-alt title_icon"></i>
-                <h2>about me</h2>
-                <div class="row">
-                    <div class="col-sm-4 d-flex align-item-center"><img src="img/photo/my_photo.JPG" width="100%" alt=""></div>
-                    <div class="col-sm-7 offset-sm-1">
-                        <div class="name_title">
-                            <p>市古空/ICHIGO SORA<a href="https://twitter.com/nira_22222"><i class="fab fa-twitter-square"></i></a></p>
-                        </div>
-                        <div class="status_item">
-                            <p>出身、在住：愛知県</p>
-                        </div>
-                        <div class="status_item">
-                            <p>所属：豊田工業高等専門学校　情報工学科</p>
-                        </div>
-                        <div class="status_item">
-                            <p>活動：学校にて情報工学を専攻する傍ら、独学でWebについて勉強、制作している。</p>
-                        </div>
-                        <div class="status_item">
-                            <p>その他：フロントエンド周りの実装を主にしている。プログラミング自体が好きなので趣味としてPython,Java,Cなども触ったりする。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--スキル-->
-        <div class="skill">
-            <div class="container">
-                <i class="fas fa-code title_icon"></i>
-                <h2>skill</h2>
-                <div class="row skill_items">
-                    <div class="skill_item col-sm-4 col-6">
-                        <div>
-                            <img src="img/logo/html-5.svg" alt="HTML5">
-                        </div>
-                        <p>HTML5</p>
-                    </div>
-                    <div class="skill_item col-sm-4 col-6">
-                        <div>
-                            <img src="img/logo/css-3.svg" alt="CSS3">
-                        </div>
-                        <p>CSS3</p>
-                    </div>
-                    <div class="skill_item col-sm-4 col-6">
-                        <div>
-                            <img src="img/logo/javascript.svg" alt="JavaScript">
-                        </div>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="skill_item col-sm-3 col-6">
-                        <div>
-                            <img src="img/logo/bootstrap.svg" alt="Bootstrap4">
-                        </div>
-                        <p>Bootstrap4</p>
-                    </div>
-                    <div class="skill_item col-sm-3 col-6">
-                        <div>
-                            <img src="img/logo/sass.svg" alt="SCSS">
-                        </div>
-                        <p>SCSS</p>
-                    </div>
-                    <div class="skill_item col-sm-3 col-6">
-                        <div>
-                            <img src="img/logo/jquery.svg" alt="jQuery">
-                        </div>
-                        <p>jQuery</p>
-                    </div>
-                    <div class="skill_item col-sm-3 col-6">
-                        <div>
-                            <img src="img/logo/vue.svg" alt="Vue.js">
-                        </div>
-                        <p>Vue.js</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--制作実績-->
-        <div class="works">
-            <div class="container">
-                <i class="fas fa-laptop-code title_icon title_icon"></i>
-                <h2>works</h2>
-                <!--オリジナルウェブサービス-->
-                <div class="web_service">
-                    <h3>オリジナルサービス</h3>
-                    <div class="gurusupo row">
-                        <div class="service_top col-sm-6">
-                            <div><img src="img/site/gurusupo_hero.png" alt=""></div>
-                            <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。条件から絞り込むこともできます。サービス仕様、デザイン等全て自分で考えました。</p>
-                        </div>
-                        <div class="service_about col-sm-6">
-                            <h4>GURUSUPO</h4>
-                            <p>使用言語：HTML5,CSS,JavaScript</p>
-                            <p>使用フレームワーク：Vue.js</p>
-                            <p>使用ライブラリ：vue-paginate,vue-js-modal</p>
-                            <p>使用API：Google Map API,ぐるなびAPI</p>
-                            <p><a href="https://bisquelizard14.sakura.ne.jp/">サイトURL</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--模写サイト-->
-                <div class="web_site">
-                    <h3>模写サイト</h3>
-                    <div class="row site_items">
-                        <div class="col-4"><img src="img/site/flower_hero.png" alt=""></div>
-                        <div class="col-4"><img src="img/site/matukaze_hero.png" alt=""></div>
-                        <div class="col-4"><img src="img/site/zen_place_yoga_hero.png" alt=""></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--お問い合わせ-->
-        <div class="contact">
-            <div class="container">
-                <i class="far fa-envelope title_icon"></i>
-                <h2>contact</h2>
-                <div>
-                    <p>基本的にご記入いただいた連絡先に24時間以内にこちらからご連絡いたします。</p>
-                    <p>また、お問い合わせは下記SNSアカウントからもお待ちしております。</p>
-                    <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
-                    <a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a>
-                </div>
-                <form action="GoogleフォームのURL" method="post">
-                    <p><input class="form-control" type="text" name="Googleフォームからコピペ" placeholder="お名前"></p>
-                    <p><input class="form-control" type="email" name="Googleフォームからコピペ" placeholder="メールアドレス"></p>
-                    <p><textarea class="form-control" name="Googleフォームからコピペ" rows="5" cols="30" placeholder="お問い合わせ内容"></textarea></p>
-                    <p><button type="submit" name="submit" class="btn btn-info ">送信</button></p>
-                </form>
-            </div>
-        </div>
-
-        <!--フッター-->
-        <footer>
-            <p>©SORA ICHIGO 2020</p>
-        </footer>
-
-        <!--スクロールボタン-->
-        <div class="scroll_button">
-            <i class="fas fa-chevron-circle-up"></i>
+    </header>
+    
+    <!--ナビゲーションメニュー-->
+    <div class="navi_menu d-block d-md-none">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+    </div>
+    
+    <!-- スライドメニュー部分-->
+    <nav id="slide_menu">
+        <ul>
+            <li>top</li>
+            <li>about</li>
+            <li>skill</li>
+            <li>works</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+    
+    <!--ヒーローイメージ-->
+    <div class="hero">
+        <div>
+            <img src="img/logo/hero_logo_font.png" alt="hero_logo">
+            <a href="#" class="btn-box">WHO'S ME?</a>
         </div>
     </div>
+
+
+    <!--自己紹介-->
+    <div class="about">
+        <div class="container">
+            <i class="fas fa-user-alt title_icon"></i>
+            <h2>about me</h2>
+            <div class="row">
+                <div class="col-sm-4 d-flex align-item-center"><img src="img/photo/my_photo.JPG" width="100%" alt=""></div>
+                <div class="col-sm-7 offset-sm-1">
+                    <div class="name_title">
+                        <p>市古空/ICHIGO SORA<a href="https://twitter.com/nira_22222"><i class="fab fa-twitter-square"></i></a></p>
+                    </div>
+                    <div class="status_item">
+                        <p>出身、在住：愛知県</p>
+                    </div>
+                    <div class="status_item">
+                        <p>所属：豊田工業高等専門学校　情報工学科</p>
+                    </div>
+                    <div class="status_item">
+                        <p>活動：学校にて情報工学を専攻する傍ら、独学でWebについて勉強、制作している。</p>
+                    </div>
+                    <div class="status_item">
+                        <p>その他：フロントエンド周りの実装を主にしている。プログラミング自体が好きなので趣味としてPython,Java,Cなども触ったりする。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--スキル-->
+    <div class="skill">
+        <div class="container">
+            <i class="fas fa-code title_icon"></i>
+            <h2>skill</h2>
+            <div class="row skill_items">
+                <div class="skill_item col-sm-4 col-6">
+                    <div>
+                        <img src="img/logo/html-5.svg" alt="HTML5">
+                    </div>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill_item col-sm-4 col-6">
+                    <div>
+                        <img src="img/logo/css-3.svg" alt="CSS3">
+                    </div>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill_item col-sm-4 col-6">
+                    <div>
+                        <img src="img/logo/javascript.svg" alt="JavaScript">
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill_item col-sm-3 col-6">
+                    <div>
+                        <img src="img/logo/bootstrap.svg" alt="Bootstrap4">
+                    </div>
+                    <p>Bootstrap4</p>
+                </div>
+                <div class="skill_item col-sm-3 col-6">
+                    <div>
+                        <img src="img/logo/sass.svg" alt="SCSS">
+                    </div>
+                    <p>SCSS</p>
+                </div>
+                <div class="skill_item col-sm-3 col-6">
+                    <div>
+                        <img src="img/logo/jquery.svg" alt="jQuery">
+                    </div>
+                    <p>jQuery</p>
+                </div>
+                <div class="skill_item col-sm-3 col-6">
+                    <div>
+                        <img src="img/logo/vue.svg" alt="Vue.js">
+                    </div>
+                    <p>Vue.js</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--制作実績-->
+    <div class="works">
+        <div class="container">
+            <i class="fas fa-laptop-code title_icon title_icon"></i>
+            <h2>works</h2>
+            <!--オリジナルウェブサービス-->
+            <div class="web_service">
+                <h3>オリジナルサービス</h3>
+                <div class="gurusupo row">
+                    <div class="service_top col-sm-6">
+                        <div><img src="img/site/gurusupo_hero.png" alt=""></div>
+                        <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。条件から絞り込むこともできます。サービス仕様、デザイン等全て自分で考えました。</p>
+                    </div>
+                    <div class="service_about col-sm-6">
+                        <h4>GURUSUPO</h4>
+                        <p>使用言語：HTML5,CSS,JavaScript</p>
+                        <p>使用フレームワーク：Vue.js</p>
+                        <p>使用ライブラリ：vue-paginate,vue-js-modal</p>
+                        <p>使用API：Google Map API,ぐるなびAPI</p>
+                        <p><a href="https://bisquelizard14.sakura.ne.jp/">サイトURL</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--模写サイト-->
+            <div class="web_site">
+                <h3>模写サイト</h3>
+                <div class="row site_items">
+                    <div class="col-4"><img src="img/site/flower_hero.png" alt=""></div>
+                    <div class="col-4"><img src="img/site/matukaze_hero.png" alt=""></div>
+                    <div class="col-4"><img src="img/site/zen_place_yoga_hero.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--お問い合わせ-->
+    <div class="contact">
+        <div class="container">
+            <i class="far fa-envelope title_icon"></i>
+            <h2>contact</h2>
+            <div>
+                <p>基本的にご記入いただいた連絡先に24時間以内にこちらからご連絡いたします。</p>
+                <p>また、お問い合わせは下記SNSアカウントからもお待ちしております。</p>
+                <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
+                <a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a>
+            </div>
+            <form action="GoogleフォームのURL" method="post">
+                <p><input class="form-control" type="text" name="Googleフォームからコピペ" placeholder="お名前"></p>
+                <p><input class="form-control" type="email" name="Googleフォームからコピペ" placeholder="メールアドレス"></p>
+                <p><textarea class="form-control" name="Googleフォームからコピペ" rows="5" cols="30" placeholder="お問い合わせ内容"></textarea></p>
+                <p><button type="submit" name="submit" class="btn btn-info ">送信</button></p>
+            </form>
+        </div>
+    </div>
+
+    <!--フッター-->
+    <footer>
+        <p>©SORA ICHIGO 2020</p>
+    </footer>
+
+    <!--スクロールボタン-->
+    <div class="scroll_button">
+        <i class="fas fa-chevron-circle-up"></i>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!--main.js-->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/drower_slide.js"></script>
 </body>
 
 </html>

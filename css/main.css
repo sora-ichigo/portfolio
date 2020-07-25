@@ -4,9 +4,10 @@ html {
   height: 100%;
   margin: 0; }
 
-#app {
-  height: 100%;
-  position: relative; }
+body {
+  position: relative;
+  right: 0;
+  overflow-x: hidden; }
 
 .scroll_button {
   position: fixed;
@@ -22,6 +23,96 @@ html {
 /*===========================================================*/
 /*　 ヘッダー　　                                            */
 /*===========================================================*/
+#slide_menu {
+  position: fixed;
+  top: 0;
+  right: -240px;
+  width: 240px;
+  height: 100%;
+  background: #e8e8e8;
+  opacity: 0.9;
+  z-index: 9999; }
+  #slide_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0; }
+  #slide_menu li {
+    border-bottom: 1px solid #bfbfbf;
+    padding: 20px 20px;
+    color: #292929;
+    font-size: 16px;
+    font-family: "Sora", sans-serif;
+    cursor: pointer;
+    transition: .5s; }
+    #slide_menu li:hover {
+      font-size: 17px; }
+
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0); }
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none; }
+
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  top: 19px;
+  right: 22px;
+  height: 22px;
+  width: 26px; }
+
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #000; }
+
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 5px; }
+
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left; }
+
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 5px; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: 8px; }
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: -9px; }
+
 header {
   width: 100%;
   height: 50px;
@@ -299,72 +390,29 @@ footer {
     line-height: 40px; }
 
 /*===============================================================================*/
+/*= width<768px以下の設定　　                                                   =*/
+/*===============================================================================*/
+@media (max-width: 768px) {
+  .skill .skill_item {
+    margin-bottom: 20px; }
+    .skill .skill_item img {
+      width: 60%; }
+    .skill .skill_item div {
+      height: 120px; }
+
+  .contact div p {
+    font-size: 12px; }
+
+  form {
+    width: 80%; }
+
+  footer {
+    height: 30px; }
+    footer p {
+      font-size: 10px;
+      line-height: 30px; } }
+/*===============================================================================*/
 /*= width<576px以下の設定　　                                                   =*/
 /*===============================================================================*/
-input[type="checkbox"]:checked ~ #sidebarMenu {
-  transform: translateX(0); }
-
-input[type=checkbox] {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  display: none; }
-
-.sidebarIconToggle {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  cursor: pointer;
-  position: absolute;
-  z-index: 99;
-  height: 100%;
-  width: 100%;
-  top: 19px;
-  right: 22px;
-  height: 22px;
-  width: 26px; }
-
-.spinner {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background-color: #000; }
-
-.horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 5px; }
-
-.diagonal.part-1 {
-  position: relative;
-  transition: all 0.3s;
-  box-sizing: border-box;
-  float: left; }
-
-.diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  position: relative;
-  float: left;
-  margin-top: 5px; }
-
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  opacity: 0; }
-
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(-135deg);
-  margin-top: 8px; }
-
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  transform: rotate(135deg);
-  margin-top: -9px; }
 
 /*# sourceMappingURL=main.css.map */
