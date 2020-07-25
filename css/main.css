@@ -2,7 +2,8 @@
 body,
 html {
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  background: grey; }
 
 .btn-box {
   display: block;
@@ -191,7 +192,8 @@ header {
 
 .web_site h3 {
   margin-bottom: 40px;
-  text-align: center; }
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif; }
 
 .site_items {
   width: 90%;
@@ -201,5 +203,53 @@ header {
     cursor: pointer; }
   .site_items img {
     width: 100%; }
+
+/*===========================================================*/
+/*= お問い合わせ                                            =*/
+/*===========================================================*/
+.contact .container {
+  padding: 30px 0;
+  border-bottom: 1px solid #888888; }
+  .contact .container div {
+    margin-bottom: 40px; }
+    .contact .container div p {
+      font-family: "Noto Sans JP", sans-serif;
+      text-align: center;
+      margin-bottom: 5px; }
+    .contact .container div i {
+      margin-top: 10px;
+      font-size: 50px;
+      color: #1DA1F2; }
+.contact h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-family: "PT Serif", serif;
+  margin-bottom: 20px; }
+
+form {
+  width: 50%;
+  margin: 0 auto; }
+  form p {
+    text-align: center;
+    margin-bottom: 1.5rem; }
+  form input {
+    width: 100%; }
+  form textarea {
+    width: 100%; }
+  form button {
+    width: 50%; }
+
+/*===========================================================*/
+/*= フッター　　                                            =*/
+/*===========================================================*/
+footer {
+  height: 40px;
+  background: #adacac; }
+  footer p {
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 40px; }
 
 /*# sourceMappingURL=main.css.map */
