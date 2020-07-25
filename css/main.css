@@ -24,6 +24,31 @@ body {
     .scroll_button i:hover {
       opacity: 0.6; }
 
+.img_wrap {
+  transition-duration: 0.5s; }
+
+.img_wrap img {
+  width: 100%;
+  cursor: pointer; }
+
+.img_wrap:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s; }
+
+.img_wrap {
+  overflow: hidden;
+  background: #000; }
+
+.img_wrap img {
+  width: 100%;
+  cursor: pointer;
+  transition-duration: 0.6s; }
+
+.img_wrap:hover img {
+  opacity: 0.6;
+  transition-duration: 0.6s; }
+
 /*===========================================================*/
 /*　 ヘッダー　　                                            */
 /*===========================================================*/
@@ -307,12 +332,17 @@ header {
   .web_service h3 {
     margin-bottom: 40px;
     text-align: center;
-    font-family: "Noto Sans JP", sans-serif; }
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px; }
 
 .service_top div {
+  position: relative;
+  top: 0;
+  left: 0;
   cursor: pointer;
   width: 90%;
-  margin: 0 auto 20px; }
+  margin: 0 auto 20px;
+  border-radius: 10px; }
 .service_top img {
   width: 100%;
   border-radius: 10px; }
@@ -332,7 +362,8 @@ header {
 .web_site h3 {
   margin-bottom: 40px;
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif; }
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px; }
 
 .site_items {
   width: 90%;
@@ -356,9 +387,6 @@ header {
       font-family: "Noto Sans JP", sans-serif;
       text-align: center;
       margin-bottom: 5px; }
-    .contact .container div a {
-      display: block;
-      text-align: center; }
     .contact .container div i {
       margin-top: 10px;
       font-size: 50px;
