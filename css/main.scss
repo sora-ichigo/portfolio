@@ -24,6 +24,7 @@ body {
 
 // スクロールボタン
 .scroll_button {
+    cursor:pointer;
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -332,6 +333,8 @@ header {
     }
 
     .name_title {
+        display: flex;
+        align-items: center;
         margin-top: 20px;
         font: {
             family: $jp-title-font;
@@ -340,14 +343,21 @@ header {
         ;
 
         margin-bottom: 30px;
+        p{
+            margin: 0;
+        }
 
         a {
-            color: black;
+            color: #888888;
             font: {
-                size: 20px;
+                size: 30px;
             }
             ;
-            margin-left: 15px;
+            transition:.5s;
+            margin-left: 40px;
+            &:hover{
+                color:#1DA1F2;
+            }
         }
     }
 
@@ -389,14 +399,18 @@ header {
         margin-bottom: 30px;
         p {
             text-align: center;
+            font:{
+                family:$jp-title_font;
+                size:20px;
+            };
         }
         div {
-            height: 200px;
+            height: 130px;
             display: flex;
             align-items: center;
             justify-content: center;
             img {
-                width: 40%;
+                width: 30%;
             }
         }
     }
@@ -427,6 +441,7 @@ header {
     h3 {
         margin-bottom: 40px;
         text-align: center;
+        font-family:$jp-title_font;
     }
 }
 
@@ -584,7 +599,7 @@ footer {
 
     .skill .skill_item {
         img {
-            width: 60%;
+            width: 30%;
         }
         div {
             height: 120px;

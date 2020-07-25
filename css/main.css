@@ -10,6 +10,7 @@ body {
   overflow-x: hidden; }
 
 .scroll_button {
+  cursor: pointer;
   position: fixed;
   bottom: 15px;
   right: 15px; }
@@ -224,14 +225,21 @@ header {
   margin: auto;
   border-radius: 50%; }
 .about .name_title {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
   margin-bottom: 30px; }
+  .about .name_title p {
+    margin: 0; }
   .about .name_title a {
-    color: black;
-    font-size: 20px;
-    margin-left: 15px; }
+    color: #888888;
+    font-size: 30px;
+    transition: .5s;
+    margin-left: 40px; }
+    .about .name_title a:hover {
+      color: #1DA1F2; }
 .about .status_item {
   margin-bottom: 10px; }
   .about .status_item p {
@@ -261,14 +269,16 @@ header {
 .skill .skill_item {
   margin-bottom: 30px; }
   .skill .skill_item p {
-    text-align: center; }
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px; }
   .skill .skill_item div {
-    height: 200px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center; }
     .skill .skill_item div img {
-      width: 40%; }
+      width: 30%; }
 
 /*===========================================================*/
 /*= 制作実績　　                                            =*/
@@ -292,7 +302,8 @@ header {
   margin-bottom: 60px; }
   .web_service h3 {
     margin-bottom: 40px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif; }
 
 .service_top div {
   cursor: pointer;
@@ -396,7 +407,7 @@ footer {
   .skill .skill_item {
     margin-bottom: 20px; }
     .skill .skill_item img {
-      width: 60%; }
+      width: 30%; }
     .skill .skill_item div {
       height: 120px; }
 
