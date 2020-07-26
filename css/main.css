@@ -458,7 +458,8 @@ footer {
 /*===============================================================================*/
 @media (max-width: 576px) {
   .about img {
-    width: 60%;
+    width: 280px;
+    height: 280px;
     margin: 0 auto; }
   .about .about_status {
     width: 80%;
