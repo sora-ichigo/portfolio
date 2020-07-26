@@ -176,6 +176,7 @@ header {
   height: 100%;
   background-image: url("../img/background/hero_back_white.jpg");
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -457,7 +458,8 @@ footer {
 /*===============================================================================*/
 @media (max-width: 576px) {
   .about img {
-    width: 60%; }
+    width: 60%;
+    margin: 0 auto; }
   .about .about_status {
     width: 80%;
     margin: 0 auto; }
