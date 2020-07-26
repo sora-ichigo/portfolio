@@ -49,6 +49,51 @@ body {
   opacity: 0.6;
   transition-duration: 0.6s; }
 
+.btn-box {
+  display: block;
+  width: 170px;
+  margin-top: 60px;
+  margin: 40px auto 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Sora", sans-serif;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 18px;
+  position: relative;
+  border: 2px solid #000000;
+  transition: .5s; }
+  .btn-box:hover {
+    border: 2px solid transparent;
+    color: #000000;
+    text-decoration: none; }
+    .btn-box:hover:after, .btn-box:hover:before {
+      transform: scale(1);
+      background: rgba(0, 0, 0, 0.2); }
+  .btn-box:before, .btn-box:after {
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    transform: scale(0);
+    transition: .2s; }
+  .btn-box:before {
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    transform-origin: 100% 0%; }
+  .btn-box:after {
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform-origin: 0% 100%; }
+
+.hero_btn {
+  margin: 60px auto -35px; }
+
 /*===========================================================*/
 /*　 ヘッダー　　                                            */
 /*===========================================================*/
@@ -186,48 +231,6 @@ header {
   .hero img {
     width: 80%;
     max-width: 700px; }
-
-.btn-box {
-  display: block;
-  width: 170px;
-  margin-top: 60px;
-  margin: 60px auto -35px;
-  text-align: center;
-  font-size: 16px;
-  font-family: "Sora", sans-serif;
-  color: #000000;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 18px;
-  position: relative;
-  border: 2px solid #000000;
-  transition: .5s; }
-  .btn-box:hover {
-    border: 2px solid transparent;
-    color: #000000;
-    text-decoration: none; }
-    .btn-box:hover:after, .btn-box:hover:before {
-      transform: scale(1);
-      background: rgba(0, 0, 0, 0.2); }
-  .btn-box:before, .btn-box:after {
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    transform: scale(0);
-    transition: .2s; }
-  .btn-box:before {
-    border-bottom: 2px solid #000000;
-    border-left: 2px solid #000000;
-    transform-origin: 100% 0%; }
-  .btn-box:after {
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
-    transform-origin: 0% 100%; }
 
 /*===========================================================*/
 /*= 自己紹介　　                                            =*/
