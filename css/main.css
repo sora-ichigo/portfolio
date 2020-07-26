@@ -175,9 +175,7 @@ header {
 .hero {
   height: 100%;
   background-image: url("../img/site/flower_hero.png");
-  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
