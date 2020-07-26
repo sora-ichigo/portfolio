@@ -476,6 +476,9 @@ footer {
 
   .service_about {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .web_site img {
+    height: 200px; } }
 
 /*# sourceMappingURL=main.css.map */
