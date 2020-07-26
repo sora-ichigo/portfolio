@@ -383,6 +383,16 @@ header {
     width: 100%;
     height: 100%; }
 
+.modal {
+  padding: 0;
+  z-index: 10001; }
+
+.modal-dialog {
+  margin: 30px auto; }
+
+.modal-body {
+  padding: 0; }
+
 /*===========================================================*/
 /*= お問い合わせ                                            =*/
 /*===========================================================*/
@@ -496,6 +506,10 @@ footer {
 
   .service_about {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .modal-dialog {
+    width: 80%;
+    margin: 30px auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <!--Vue.js-->
     <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+    <!-- jQuery Modal -->
 
     <title>Ichigo's portfolio</title>
 </head>
@@ -37,7 +38,7 @@
             </div>
         </div>
     </header>
-    
+
     <!--ナビゲーションメニュー-->
     <div class="navi_menu d-block d-md-none">
         <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
@@ -47,7 +48,7 @@
             <div class="spinner diagonal part-2"></div>
         </label>
     </div>
-    
+
     <!-- スライドメニュー部分-->
     <nav id="slide_menu">
         <ul>
@@ -58,7 +59,7 @@
             <li class="skip_contact">contact</li>
         </ul>
     </nav>
-    
+
     <!--ヒーローイメージ-->
     <div class="hero">
         <div>
@@ -94,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <p class="btn-box skip_skill">What's skill?</p>
         </div>
     </div>
@@ -152,11 +153,12 @@
         </div>
     </div>
 
+
     <!--制作実績-->
     <div class="works">
         <div class="container">
             <i class="fas fa-laptop-code title_icon title_icon"></i>
-            <h2>works</h2>　
+            <h2>works</h2>
             <!--オリジナルウェブサービス-->
             <div class="web_service">
                 <h3>オリジナルサービス</h3>
@@ -182,14 +184,58 @@
             <div class="web_site">
                 <h3>模写サイト</h3>
                 <div class="d-md-flex justify-content-md-between site_items">
-                    <div class=" img_wrap"><img src="img/site/flower_hero.png" alt=""></div>
-                    <div class=" img_wrap"><img src="img/site/matukaze_hero.png" alt=""></div>
-                    <div class=" img_wrap"><img src="img/site/zen_place_yoga_hero.png" alt=""></div>
+                    <div class=" img_wrap" data-toggle="modal" data-target="#flower_modal"><img src="img/site/flower_hero.png" alt=""></div>
+                    <div class=" img_wrap" data-toggle="modal" data-target="#matukaze_modal"><img src="img/site/matukaze_hero.png" alt=""></div>
+                    <div class=" img_wrap" data-toggle="modal" data-target="#yoga_modal"><img src="img/site/zen_place_yoga_hero.png" alt=""></div>
                 </div>
             </div>
             <p class="btn-box skip_contact">To contact</p>
         </div>
+
+        <!--モーダル-->
+        <div class="modal fade" id="flower_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/site/flower_full.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="matukaze_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/site/matukaze_full.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="flower_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/site/flower_full.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="yoga_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/site/zen_place_yoga_full.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
+
+
 
     <!--お問い合わせ-->
     <div class="contact">
@@ -201,7 +247,7 @@
                 <p>また、お問い合わせは下記SNSアカウントからもお待ちしております。</p>
                 <p>些細なことでも構いませんのでまずはお問い合わせください！！</p>
                 <p><a href="https://twitter.com/nira_22222"><i class="fab fa-twitter"></i></a></p>
-                
+
             </div>
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeW1rcVbDjvBYkiSP-iM9YLgnUEmThuGyX02vCR923L1MaMQA/formResponse" method="post">
                 <p><input class="form-control" type="text" name="entry.2005620554" placeholder="お名前"></p>
