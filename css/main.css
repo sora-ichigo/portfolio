@@ -174,7 +174,7 @@ header {
 /*===========================================================*/
 .hero {
   height: 100%;
-  background-image: url("../img/site/flower_hero.png");
+  background-image: url("../img/background/hero_back_white.jpg");
   background-position: center;
   display: flex;
   flex-direction: column;
