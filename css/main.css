@@ -271,10 +271,13 @@ header {
     .about .name_title a:hover {
       color: #1DA1F2; }
 .about .status_item {
-  margin-bottom: 10px; }
+  border-bottom: 1px solid #888888;
+  padding: 15px; }
   .about .status_item p {
     font-family: "Noto Sans JP", sans-serif;
     margin: 0; }
+.about .first_item {
+  border-top: 1px solid #888888; }
 
 /*===========================================================*/
 /*= スキル　　　                                            =*/
@@ -357,7 +360,9 @@ header {
   font-size: 28px;
   font-family: "Sora", sans-serif; }
 .service_about p {
-  margin: 0 0 10px;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid #888888;
   font-family: "Noto Sans JP", sans-serif; }
 
 .web_site h3 {
@@ -371,9 +376,12 @@ header {
   margin: 0 auto 40px; }
   .site_items div {
     padding: 0;
-    cursor: pointer; }
+    border-radius: 10px;
+    cursor: pointer;
+    width: 32%; }
   .site_items img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 /*===========================================================*/
 /*= お問い合わせ                                            =*/
@@ -436,13 +444,22 @@ footer {
 /*===============================================================================*/
 /*= width<768px以下の設定　　                                                   =*/
 /*===============================================================================*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .about img {
+    width: 200px;
+    height: 200px;
+    margin: auto; }
+
   .skill .skill_item {
     margin-bottom: 20px; }
     .skill .skill_item img {
       width: 30%; }
     .skill .skill_item div {
       height: 120px; }
+
+  .site_items div {
+    width: 80%;
+    margin: 0 auto 15px; }
 
   .contact .container div p {
     width: 80%;
@@ -479,9 +496,6 @@ footer {
 
   .service_about {
     width: 80%;
-    margin: 0 auto; }
-
-  .web_site img {
-    height: 200px; } }
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=main.css.map */
