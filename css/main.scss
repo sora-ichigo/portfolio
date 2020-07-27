@@ -7,13 +7,13 @@ $en-title-font: 'PT Serif',
 serif;
 $en-font: 'Sora',
 sans-serif;
+$title-font:'Kalam', cursive;
 
 // 初期設定
 body,
 html {
     height: 100%;
-    margin: 0; 
-    // background:grey;
+    margin: 0; // background:grey;
 }
 
 .row {
@@ -132,6 +132,8 @@ body {
 .hero_btn {
     margin: 60px auto -35px;
 }
+
+
 
 
 @mixin container {
@@ -338,13 +340,21 @@ header {
     justify-content: center;
     align-items: center;
 
+
+
     div {
         text-align: center;
-    }
-
-    img {
-        width: 80%;
-        max-width: 700px;
+    } // img {
+    //     width: 80%;
+    //     max-width: 700px;
+    // }
+    h1 {
+        margin: 0 20px 10px;
+        font: {
+            size:60px;
+            family: $title-font;
+        }
+        ;
     }
 }
 
@@ -434,8 +444,21 @@ header {
         @include container;
 
     }
+
     h2 {
         @include title;
+        margin-bottom: 40px;
+    }
+
+    .skill_text {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 20px;
+        font: {
+            family: $jp-title-font;
+        }
+        ;
+        color:#888888;
     }
 
     .title_icon {
@@ -534,12 +557,13 @@ header {
         }
         ;
     }
-    h5{
+    h5 {
         margin-bottom: 10px;
-        font:{
-            size:20px;
-            family:$jp-title-font;
-        };
+        font: {
+            size: 20px;
+            family: $jp-title-font;
+        }
+        ;
     }
     p {
         margin: 0;
@@ -584,15 +608,16 @@ header {
 }
 
 // モーダル
-.modal{
+.modal {
     padding-right: 0;
-    z-index:10001;
+    z-index: 10001;
 }
-.modal-dialog{
+
+.modal-dialog {
     position: relative;
     margin: 30px auto;
-    i{
-        color:#4a4a4a;
+    i {
+        color: #4a4a4a;
         position: absolute;
         top: -13px;
         right: -13px;
@@ -600,13 +625,15 @@ header {
         z-index: 1;
     }
 }
-.modal-body{
+
+.modal-body {
     padding: 0;
 }
 
-.video-dialog{
+.video-dialog {
     margin: 0 auto;
 }
+
 /*===========================================================*/
 
 /*= お問い合わせ                                            =*/
@@ -776,13 +803,13 @@ footer {
         width: 80%;
         margin: 0 auto;
     }
-    
-    .modal-dialog{
+
+    .modal-dialog {
         width: 80%;
         margin: 30px auto;
     }
-    
-    .video-dialog{
+
+    .video-dialog {
         margin: 90px auto;
     }
 }
