@@ -50,6 +50,7 @@ body {
   transition-duration: 0.6s; }
 
 .btn-box {
+  cursor: pointer;
   display: block;
   width: 170px;
   margin-top: 60px;
