@@ -92,7 +92,19 @@ body {
     transform-origin: 0% 100%; }
 
 .hero_btn {
-  margin: 60px auto -35px; }
+  margin: 60px auto -35px;
+  color: #ffffff;
+  border: 2px solid #ffffff; }
+  .hero_btn:hover {
+    color: #888888; }
+    .hero_btn:hover:after, .hero_btn:hover:before {
+      background: rgba(255, 255, 255, 0.2); }
+  .hero_btn:before {
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff; }
+  .hero_btn:after {
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff; }
 
 /*===========================================================*/
 /*　 ヘッダー　　                                            */
@@ -219,9 +231,9 @@ header {
 /*===========================================================*/
 .hero {
   height: 100%;
-  background-image: url("../img/background/hero_back_white.jpg");
-  background-position: center;
-  background-attachment: fixed;
+  background-image: url("../img/background/hero_back_stro2.jpg");
+  background-position: right;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -229,8 +241,9 @@ header {
   .hero div {
     text-align: center; }
   .hero h1 {
+    color: white;
     margin: 0 20px 10px;
-    font-size: 60px;
+    font-size: 65px;
     font-family: "Kalam", cursive; }
 
 /*===========================================================*/

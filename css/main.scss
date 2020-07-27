@@ -7,7 +7,8 @@ $en-title-font: 'PT Serif',
 serif;
 $en-font: 'Sora',
 sans-serif;
-$title-font:'Kalam', cursive;
+$title-font:'Kalam',
+cursive;
 
 // 初期設定
 body,
@@ -131,6 +132,25 @@ body {
 
 .hero_btn {
     margin: 60px auto -35px;
+
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    &:hover {
+        color: #888888;
+        &:after,
+        &:before {
+            background: rgba(256, 256, 256, 0.2);
+        }
+    }
+    &:before {
+        border-bottom: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+    }
+
+    &:after {
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+    }
 }
 
 
@@ -332,9 +352,9 @@ header {
 
 .hero {
     height: 100%;
-    background-image: url("../img/background/hero_back_white.jpg"); // background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-image: url("../img/background/hero_back_stro2.jpg"); // background-size: cover;
+    background-position: right;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -344,14 +364,13 @@ header {
 
     div {
         text-align: center;
-    } // img {
-    //     width: 80%;
-    //     max-width: 700px;
-    // }
+    }
+
     h1 {
+        color: white;
         margin: 0 20px 10px;
         font: {
-            size:60px;
+            size: 65px;
             family: $title-font;
         }
         ;
