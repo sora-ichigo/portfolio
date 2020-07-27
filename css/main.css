@@ -272,7 +272,7 @@ header {
       color: #1DA1F2; }
 .about .status_item {
   border-bottom: 1px solid #888888;
-  padding: 15px; }
+  padding: 10px 0; }
   .about .status_item p {
     font-family: "Noto Sans JP", sans-serif;
     margin: 0; }
@@ -359,6 +359,10 @@ header {
   margin: 20px 0;
   font-size: 28px;
   font-family: "Sora", sans-serif; }
+.service_about h5 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Noto Sans JP", sans-serif; }
 .service_about p {
   margin: 0;
   padding: 10px 0;
@@ -384,14 +388,25 @@ header {
     height: 100%; }
 
 .modal {
-  padding: 0;
+  padding-right: 0;
   z-index: 10001; }
 
 .modal-dialog {
+  position: relative;
   margin: 30px auto; }
+  .modal-dialog i {
+    color: #4a4a4a;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    font-size: 40px;
+    z-index: 1; }
 
 .modal-body {
   padding: 0; }
+
+.video-dialog {
+  margin: 0 auto; }
 
 /*===========================================================*/
 /*= お問い合わせ                                            =*/

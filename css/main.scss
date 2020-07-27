@@ -407,7 +407,7 @@ header {
 
 
         border-bottom: 1px solid #888888;
-        padding: 15px;
+        padding: 10px 0;
 
         p {
             font: {
@@ -534,6 +534,13 @@ header {
         }
         ;
     }
+    h5{
+        margin-bottom: 10px;
+        font:{
+            size:20px;
+            family:$jp-title-font;
+        };
+    }
     p {
         margin: 0;
         padding: 10px 0;
@@ -578,16 +585,28 @@ header {
 
 // モーダル
 .modal{
-    padding: 0;
+    padding-right: 0;
     z-index:10001;
 }
 .modal-dialog{
+    position: relative;
     margin: 30px auto;
+    i{
+        color:#4a4a4a;
+        position: absolute;
+        top: -13px;
+        right: -13px;
+        font-size: 40px;
+        z-index: 1;
+    }
 }
 .modal-body{
     padding: 0;
 }
 
+.video-dialog{
+    margin: 0 auto;
+}
 /*===========================================================*/
 
 /*= お問い合わせ                                            =*/

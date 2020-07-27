@@ -165,16 +165,17 @@
                 <div class="gurusupo row">
                     <div class="service_top col-sm-6">
                         <div class="img_wrap">
-                            <img src="img/site/gurusupo_hero.png" alt="">
+                            <img src="img/site/gurusupo_hero.png" alt="" data-toggle="modal" data-target="#gurusupo_modal">
                         </div>
-                        <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。条件から絞り込むこともできます。サービス仕様、デザイン等全て自分で考えました。</p>
+                        <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。サービス仕様、デザイン等全て自分で考えました。</p>
                     </div>
                     <div class="service_about col-sm-6">
                         <h4 class="d-none d-sm-block">GURUSUPO</h4>
-                        <p>使用言語：HTML5,CSS,JavaScript</p>
-                        <p>使用フレームワーク：Vue.js</p>
-                        <p>使用ライブラリ：vue-paginate,vue-js-modal</p>
-                        <p>使用API：Google Map API,ぐるなびAPI</p>
+                        <h5>使用開発環境</h5>
+                        <p>言語：HTML5,CSS,JavaScript</p>
+                        <p>フレームワーク：Vue.js</p>
+                        <p>ライブラリ：vue-paginate,vue-js-modal</p>
+                        <p>API：Google Map API,ぐるなびAPI</p>
                         <p><a href="https://bisquelizard14.sakura.ne.jp/" target="_blank" rel="noopener noreferrer">サイトURL</a></p>
                     </div>
                 </div>
@@ -191,8 +192,17 @@
             </div>
             <p class="btn-box skip_contact">To contact</p>
         </div>
+        
 
         <!--モーダル-->
+        <div class="modal fade" id="gurusupo_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog video-dialog" role="document">
+                <div class="modal-content">
+                    <video src="video/gurusupo.mp4" controls autoplay muted playsinline preload="none" width="100%" ></video>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="flower_modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -232,7 +242,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
 
