@@ -411,6 +411,8 @@ header {
 .modal {
   padding-right: 0;
   z-index: 10001; }
+  .modal p {
+    color: white; }
 
 .modal-dialog {
   position: relative;
