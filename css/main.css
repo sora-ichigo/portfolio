@@ -522,6 +522,11 @@ footer {
 /*= width<576px以下の設定　　                                                   =*/
 /*===============================================================================*/
 @media (max-width: 576px) {
+  .hero {
+    height: 40%; }
+    .hero h1 {
+      font-size: 45px; }
+
   .about img {
     width: 280px;
     height: 280px;

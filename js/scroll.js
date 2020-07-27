@@ -19,6 +19,7 @@ $(function() {
         }
     });
 
+    // ヒーローイメージの境目でナビゲーションメニューの色を変更
     $(window).scroll(function() {
         var about = $(".about").offset().top;
         if ($(this).scrollTop() > about-70 ) {
