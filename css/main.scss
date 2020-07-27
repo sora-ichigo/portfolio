@@ -799,6 +799,11 @@ footer {
     }
     
     .about {
+        .container{
+            padding-top: 50px;
+            border-top:none;
+            margin-top: 0;
+        }
         img {
             width: 280px;
             height: 280px;

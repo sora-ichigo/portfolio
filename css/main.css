@@ -527,6 +527,10 @@ footer {
     .hero h1 {
       font-size: 45px; }
 
+  .about .container {
+    padding-top: 50px;
+    border-top: none;
+    margin-top: 0; }
   .about img {
     width: 280px;
     height: 280px;
