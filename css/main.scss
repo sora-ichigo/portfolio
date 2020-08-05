@@ -9,7 +9,6 @@ $en-font: 'Sora',
 sans-serif;
 $title-font:'Kalam',
 cursive;
-
 // 初期設定
 body,
 html {
@@ -27,7 +26,9 @@ body {
     overflow-x: hidden;
 }
 
-
+.animated {
+    opacity: 0;
+}
 
 // スクロールボタン
 .scroll_button {
@@ -79,7 +80,7 @@ body {
 
 // 共通ボタン
 .btn-box {
-    cursor:pointer;
+    cursor: pointer;
     display: block;
     width: 170px;
     margin-top: 60px;
@@ -117,13 +118,11 @@ body {
         transform: scale(0);
         transition: .2s;
     }
-
     &:before {
         border-bottom: 2px solid #000000;
         border-left: 2px solid #000000;
         transform-origin: 100% 0%;
     }
-
     &:after {
         border-top: 2px solid #000000;
         border-right: 2px solid #000000;
@@ -132,7 +131,6 @@ body {
 }
 
 .hero_btn {
-
     color: #ffffff;
     border: 2px solid #ffffff;
     &:hover {
@@ -146,15 +144,11 @@ body {
         border-bottom: 2px solid #ffffff;
         border-left: 2px solid #ffffff;
     }
-
     &:after {
         border-top: 2px solid #ffffff;
         border-right: 2px solid #ffffff;
     }
 }
-
-
-
 
 @mixin container {
     padding: 30px 0;
@@ -194,9 +188,12 @@ $tb: 767px; //タブレット
     }
 }
 
+
 /*===========================================================*/
 
-/*　 ヘッダー　　                                            */
+
+/* v ヘッダー                                                 */
+
 
 /*===========================================================*/
 
@@ -308,7 +305,6 @@ input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
     margin-top: -9px;
 }
 
-
 header {
     width: 100%;
     height: 50px;
@@ -317,19 +313,16 @@ header {
     position: fixed;
     top: 0;
     z-index: 10000;
-
     h2 {
         margin-bottom: 0;
         line-height: 50px;
         cursor: pointer;
         font-family: $en-title-font;
     }
-
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
-
         li {
             cursor: pointer;
             font-family: $en-font;
@@ -344,9 +337,12 @@ header {
     }
 }
 
+
 /*===========================================================*/
 
+
 /*　 ヒーローイメージ　　                                    */
+
 
 /*===========================================================*/
 
@@ -359,13 +355,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
     div {
         text-align: center;
     }
-
     h1 {
         color: white;
         margin: 0 20px 10px;
@@ -380,7 +372,9 @@ header {
 
 /*===========================================================*/
 
+
 /*= 自己紹介　　                                            =*/
+
 
 /*===========================================================*/
 
@@ -395,14 +389,11 @@ header {
     }
     h2 {
         @include title;
-
     }
-
     img {
         margin: auto;
         border-radius: 50%;
     }
-
     .name_title {
         display: flex;
         align-items: center;
@@ -412,12 +403,10 @@ header {
             weight: bold;
         }
         ;
-
         margin-bottom: 30px;
         p {
             margin: 0;
         }
-
         a {
             color: #888888;
             font: {
@@ -431,13 +420,9 @@ header {
             }
         }
     }
-
     .status_item {
-
-
         border-bottom: 1px solid #888888;
         padding: 10px 0;
-
         p {
             font: {
                 family: $jp-title-font;
@@ -454,21 +439,20 @@ header {
 
 /*===========================================================*/
 
+
 /*= スキル　　　                                            =*/
+
 
 /*===========================================================*/
 
 .skill {
     .container {
         @include container;
-
     }
-
     h2 {
         @include title;
         margin-bottom: 40px;
     }
-
     .skill_text {
         text-align: center;
         width: 80%;
@@ -479,7 +463,6 @@ header {
         ;
         color:#888888;
     }
-
     .title_icon {
         @include title_icon;
     }
@@ -509,9 +492,12 @@ header {
     }
 }
 
+
 /*===========================================================*/
 
+
 /*= 制作実績　　                                            =*/
+
 
 /*===========================================================*/
 
@@ -519,7 +505,6 @@ header {
     .container {
         @include container;
     }
-
     h2 {
         @include title;
     }
@@ -540,7 +525,6 @@ header {
         }
     }
 }
-
 
 .service_top {
     div {
@@ -567,7 +551,6 @@ header {
 }
 
 .service_about {
-
     h4 {
         margin: 20px 0;
         font: {
@@ -591,7 +574,6 @@ header {
         font: {
             family: $jp-title-font;
         }
-
     }
 }
 
@@ -611,8 +593,6 @@ header {
 .site_items {
     width: 90%;
     margin: 0 auto 40px;
-
-
     div {
         padding: 0;
         border-radius: 10px;
@@ -630,8 +610,8 @@ header {
 .modal {
     padding-right: 0;
     z-index: 10001;
-    p{
-        color:white;
+    p {
+        color: white;
     }
 }
 
@@ -656,9 +636,12 @@ header {
     margin: 0 auto;
 }
 
+
 /*===========================================================*/
 
+
 /*= お問い合わせ                                            =*/
+
 
 /*===========================================================*/
 
@@ -675,7 +658,6 @@ header {
                 ;
                 text-align: center;
                 margin-bottom: 5px;
-
             }
             i {
                 margin-top: 10px;
@@ -688,7 +670,6 @@ header {
             }
         }
     }
-
     h2 {
         @include title;
         margin-bottom: 20px;
@@ -716,14 +697,17 @@ form {
     }
 }
 
-#success{
+#success {
     text-align: center;
-    color:#888888;
+    color: #888888;
 }
+
 
 /*===========================================================*/
 
+
 /*= フッター　　                                            =*/
+
 
 /*===========================================================*/
 
@@ -738,14 +722,16 @@ footer {
     }
 }
 
+
 /*===============================================================================*/
 
+
 /*= width<768px以下の設定　　                                                   =*/
+
 
 /*===============================================================================*/
 
 @include tb {
-
     .about {
         img {
             width: 200px;
@@ -753,7 +739,6 @@ footer {
             margin: auto;
         }
     }
-
     .skill .skill_item {
         img {
             width: 30%;
@@ -763,24 +748,19 @@ footer {
         }
         margin-bottom: 20px;
     }
-
     .site_items {
         div {
             width: 80%;
             margin: 0 auto 15px;
         }
     }
-
     .contact .container div p {
         width: 80%;
         margin: 0 auto 10px;
     }
-
-
     form {
         width: 80%;
     }
-
     footer {
         height: 30px;
         p {
@@ -792,25 +772,25 @@ footer {
 
 ;
 
-
 /*===============================================================================*/
 
+
 /*= width<576px以下の設定　　                                                   =*/
+
 
 /*===============================================================================*/
 
 @include sp {
-    .hero{
+    .hero {
         height: 40%;
-        h1{
-            font-size:45px;
+        h1 {
+            font-size: 45px;
         }
     }
-    
     .about {
-        .container{
+        .container {
             padding-top: 50px;
-            border-top:none;
+            border-top: none;
             margin-top: 0;
         }
         img {
@@ -818,15 +798,11 @@ footer {
             height: 280px;
             margin: 0 auto;
         }
-
         .about_status {
             width: 80%;
             margin: 0 auto;
         }
     }
-
-
-
     .service_top {
         width: 80%;
         margin: 0 auto;
@@ -842,12 +818,10 @@ footer {
         width: 80%;
         margin: 0 auto;
     }
-
     .modal-dialog {
         width: 80%;
         margin: 30px auto;
     }
-
     .video-dialog {
         margin: 90px auto;
     }

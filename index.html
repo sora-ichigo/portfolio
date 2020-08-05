@@ -15,9 +15,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--main.css-->
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- animation.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!--Vue.js-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
 
     <title>Ichigo's portfolio</title>
 </head>
@@ -107,43 +112,43 @@
             <h2>skill</h2>
             <p class="skill_text">下記の言語・ライブラリ・フレームワークを用いたWeb開発が可能です。</p>
             <div class="row skill_items">
-                <div class="skill_item col-sm-4 col-6">
+                <div class="skill_item col-sm-4 col-6 wow animated fadeInUp-box" data-wow-delay=".1s">
                     <div>
                         <img src="img/logo/html-5.svg" alt="HTML5">
                     </div>
                     <p>HTML5</p>
                 </div>
-                <div class="skill_item col-sm-4 col-6">
+                <div class="skill_item col-sm-4 col-6 wow animated fadeInUp-box" data-wow-delay=".2s">
                     <div>
                         <img src="img/logo/css-3.svg" alt="CSS3">
                     </div>
                     <p>CSS3</p>
                 </div>
-                <div class="skill_item col-sm-4 col-6">
+                <div class="skill_item col-sm-4 col-6 wow animated fadeInUp-box" data-wow-delay=".3s">
                     <div>
                         <img src="img/logo/javascript.svg" alt="JavaScript">
                     </div>
                     <p>JavaScript</p>
                 </div>
-                <div class="skill_item col-sm-3 col-6">
+                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".4s">
                     <div>
                         <img src="img/logo/bootstrap.svg" alt="Bootstrap4">
                     </div>
                     <p>Bootstrap4</p>
                 </div>
-                <div class="skill_item col-sm-3 col-6">
+                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".5s">
                     <div>
                         <img src="img/logo/sass.svg" alt="SCSS">
                     </div>
                     <p>SCSS</p>
                 </div>
-                <div class="skill_item col-sm-3 col-6">
+                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".6s">
                     <div>
                         <img src="img/logo/jquery.svg" alt="jQuery">
                     </div>
                     <p>jQuery</p>
                 </div>
-                <div class="skill_item col-sm-3 col-6">
+                <div class="skill_item col-sm-3 col-6 wow animated fadeInUp-box" data-wow-delay=".7s">
                     <div>
                         <img src="img/logo/vue.svg" alt="Vue.js">
                     </div>
@@ -161,7 +166,7 @@
             <i class="fas fa-laptop-code title_icon title_icon"></i>
             <h2>works</h2>
             <!--オリジナルウェブサービス-->
-            <div class="web_service">
+            <div class="web_service animated fadeInUp-box">
                 <h3>オリジナルサービス</h3>
                 <div class="gurusupo row">
                     <div class="service_top col-sm-6">
@@ -170,7 +175,7 @@
                         </div>
                         <p>現在の位置情報から周辺の飲食店を検索し、表示するグルメサイトです。サービス仕様、デザイン等全て自分で考えました。</p>
                     </div>
-                    <div class="service_about col-sm-6">
+                    <div class="service_about col-sm-6 ">
                         <h4 class="d-none d-sm-block">GURUSUPO</h4>
                         <h5>使用開発環境</h5>
                         <p>言語：HTML5,CSS,JavaScript</p>
@@ -183,7 +188,7 @@
             </div>
 
             <!--模写サイト-->
-            <div class="web_site">
+            <div class="web_site animated fadeInUp-box">
                 <h3>模写サイト</h3>
                 <div class="d-md-flex justify-content-md-between site_items">
                     <div class=" img_wrap" data-toggle="modal" data-target="#flower_modal"><img src="img/site/flower_hero.png" alt=""></div>
@@ -212,7 +217,6 @@
                     <div class="modal-body">
                         <img class="lazyload" data-src="img/site/flower_full.png" width="100%" alt="">
                     </div>
-                    <p>※コンテンツの読み込みに時間がかかる可能性があります</p>
                 </div>
             </div>
         </div>
@@ -223,7 +227,6 @@
                     <div class="modal-body">
                         <img class="lazyload" data-src="img/site/matukaze_full.png" width="100%" alt="">
                     </div>
-                    <p>※コンテンツの読み込みに時間がかかる可能性があります</p>
                 </div>
             </div>
         </div>
@@ -234,7 +237,6 @@
                     <div class="modal-body">
                         <img class="lazyload" data-src="img/site/zen_place_yoga_full.png" width="100%" alt="">
                     </div>
-                    <p>※コンテンツの読み込みに時間がかかる可能性があります</p>
                 </div>
             </div>
         </div>
@@ -281,18 +283,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <!-- lagyload -->
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- waypoint.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
     <!--自作JavaScript-->
     <script type="text/javascript" src="js/drower_slide.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/form.js"></script>
-    
+    <script type="text/javascript" src="js/animate.js"></script>
+
     <!--lagyload用-->
     <script>
         lazyload();
     </script>
+
+    <!-- wow.js用 -->
+    <script>
+        new WOW({
+            mobile: false
+        }).init();
+    </script>
 </body>
+
+</html>
 
 </html>
