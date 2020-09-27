@@ -602,6 +602,7 @@ header ul li:hover {
 }
 
 .site_items div {
+  border: solid 1px #e1e1e1;
   padding: 0;
   border-radius: 10px;
   cursor: pointer;
