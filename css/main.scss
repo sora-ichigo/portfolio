@@ -513,6 +513,20 @@ header {
     }
 }
 
+// 実績
+.web_works {
+    h3 {
+        margin-bottom: 40px;
+        text-align: center;
+        font: {
+            family: $jp-title-font;
+            size: 24px;
+        }
+        ;
+    }
+    margin-bottom: 60px;
+}
+
 // オリジナルサービス
 .web_service {
     margin-bottom: 60px;
@@ -588,7 +602,8 @@ header {
         ;
     }
     p {
-        margin-bottom: 40px;
+        width: 80%;
+        margin: 0 auto 35px;
         font-size: 12px;
         text-align: center;
     }
