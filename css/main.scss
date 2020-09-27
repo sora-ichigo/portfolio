@@ -192,7 +192,7 @@ $tb: 767px; //タブレット
 /*===========================================================*/
 
 
-/* v ヘッダー                                                 */
+/*   ヘッダー                                                 */
 
 
 /*===========================================================*/
@@ -580,13 +580,17 @@ header {
 // 模写サイト
 .web_site {
     h3 {
-        margin-bottom: 40px;
         text-align: center;
         font: {
             family: $jp-title-font;
             size: 20px;
         }
         ;
+    }
+    p {
+        margin-bottom: 40px;
+        font-size: 12px;
+        text-align: center;
     }
 }
 
