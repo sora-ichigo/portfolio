@@ -775,6 +775,9 @@ footer p {
     width: 80%;
     margin: 0 auto 15px;
   }
+  .coming-soon {
+    height: 154px;
+  }
   .contact .container div p {
     width: 80%;
     margin: 0 auto 10px;
