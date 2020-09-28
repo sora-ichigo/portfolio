@@ -521,17 +521,6 @@ header ul li:hover {
   opacity: 0.3;
 }
 
-.web_works {
-  margin-bottom: 60px;
-}
-
-.web_works h3 {
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 24px;
-}
-
 .web_service {
   margin-bottom: 60px;
 }
@@ -562,6 +551,17 @@ header ul li:hover {
   width: 85%;
   margin: 0 auto 0;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+.web_works {
+  margin-bottom: 60px;
+}
+
+.web_works h3 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
 }
 
 .service_about h4 {
@@ -612,6 +612,25 @@ header ul li:hover {
 .site_items img {
   width: 100%;
   height: 100%;
+}
+
+.coming-soon {
+  background: #a0a0a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coming-soon p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
 }
 
 .modal {
